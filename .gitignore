@@ -1,0 +1,25 @@
+# Secrets: only .env.example is committed
+.env
+.env.*
+!.env.example
+
+# Dependencies and build output
+node_modules/
+.pnpm-store/
+dist/
+.next/
+coverage/
+*.tsbuildinfo
+
+# Python (agents-py)
+.venv/
+__pycache__/
+
+# dbt (warehouse)
+target/
+dbt_packages/
+logs/
+
+# OS and logs
+.DS_Store
+*.log
